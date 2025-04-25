@@ -1,4 +1,4 @@
-use crate::point::Point;
+use super::point::Point;
 use std::fmt; 
 
 #[derive(Debug)]
@@ -67,9 +67,6 @@ impl Life {
                 }
             }
         }
-
-        println!("{}", self);
-
     }
 
     pub fn apply(&mut self, high_points: Vec<Point>){

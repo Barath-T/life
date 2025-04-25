@@ -1,4 +1,4 @@
-use crate::point::Point;
+use super::point::Point;
 
 pub fn generate_move(row: usize, col: usize, n: usize) -> Vec<Point> {
     let mut high_points: Vec<Point> = Vec::with_capacity(5);
